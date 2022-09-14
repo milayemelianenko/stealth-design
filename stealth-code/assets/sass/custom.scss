@@ -1,0 +1,105 @@
+/*
+  @Author : CreativeWebo
+  @Project : SuiiNuii
+  @Dev : Sagar
+  @Date : 29/01/2019;
+*/
+
+// Core variables and mixins
+
+@import "plugins/bootstrap/bootstrap.scss";
+@import "plugins/bootstrap/accordion";
+// @import "plugins/bootstrap/alert";
+// @import "plugins/bootstrap/badge";
+// @import "plugins/bootstrap/breadcrumb";
+// @import "plugins/bootstrap/button-group";
+// @import "plugins/bootstrap/buttons";
+@import "plugins/bootstrap/card";
+// @import "plugins/bootstrap/carousel";
+@import "plugins/bootstrap/close";
+@import "plugins/bootstrap/containers";
+// @import "plugins/bootstrap/dropdown";
+// @import "plugins/bootstrap/forms";
+@import "plugins/bootstrap/functions";
+@import "plugins/bootstrap/grid";
+@import "plugins/bootstrap/helpers";
+@import "plugins/bootstrap/images";
+// @import "plugins/bootstrap/list-group";
+@import "plugins/bootstrap/mixins";
+// @import "plugins/bootstrap/modal";
+@import "plugins/bootstrap/nav";
+@import "plugins/bootstrap/navbar";
+// @import "plugins/bootstrap/offcanvas";
+// @import "plugins/bootstrap/pagination";
+// @import "plugins/bootstrap/popover";
+// @import "plugins/bootstrap/progress";
+@import "plugins/bootstrap/reboot";
+@import "plugins/bootstrap/root";
+// @import "plugins/bootstrap/spinners";
+// @import "plugins/bootstrap/tables";
+@import "plugins/bootstrap/transitions";
+// @import "plugins/bootstrap/toasts";
+// @import "plugins/bootstrap/tooltip";
+@import "plugins/bootstrap/type";
+@import "plugins/bootstrap/utilities";
+@import "plugins/bootstrap/variables";
+
+
+
+
+/*font awesome 5.7.1*/
+
+// @import "fonts/font";
+
+/* config */
+
+// @import "config/mixin";
+@import "config/variables";
+
+
+/* common */
+
+@import "common/common";
+
+/* base include */
+
+@import "base/bs-header";
+@import "base/bs-footer";
+@import "base/bs-btn";
+@import "base/bs-heading";
+@import "base/bs-banner";
+@import "base/bs-video";
+@import "base/bs-card";
+@import "base/bs-faq";
+@import "base/bs-swiper";
+@import "base/bs-icn-txt";
+@import "base/bs-switch-tabs";
+@import "base/bs-tabs";
+@import "base/bs-sticky-notes";
+@import "base/bs-partner-logos";
+@import "base/bs-fnf";
+
+
+/* layout */
+
+@import "layout/lyt-section";
+
+/* fonts */
+@import "fonts/fonts";
+
+/* pages */
+
+
+/* modules */
+@import "module/mod-testimonial.scss";
+@import "module/mod-team.scss";
+@import "module/mod-black-logo.scss";
+@import "module/mod-counter.scss";
+@import "module/mod-csdp.scss";
+
+
+/* plugins */
+@import "plugins/swiper/swiper";
+@import "plugins/magnific-popup/magnifc-popup.scss";
+// @import "plugins/wow/animate";
+@import "plugins/wow/animate.scss";

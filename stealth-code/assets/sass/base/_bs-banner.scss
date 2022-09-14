@@ -1,0 +1,140 @@
+.bs-banner {
+    background: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &.banner-section {
+        // background-size: 800px 100%;
+        height: calc(1000px*var(--scale));
+
+        .inner-content {
+            padding-top: calc(220px*var(--scale));
+            padding-bottom: calc(250px*var(--scale));
+
+            .block-elements {
+                display: block;
+            }
+        }
+    }
+
+    &.typ-career {
+        .inner-content {
+            padding-top: calc(220px*var(--scale));
+            padding-bottom: calc(250px*var(--scale));
+        }
+    }
+
+    &.typ-ketto {
+        background: #859ACA;
+
+        .inner-content {
+            text-align: center;
+            padding-top: calc(120px*var(--scale));
+            padding-bottom: calc(120px*var(--scale));
+
+            .logo {
+                width: 300px;
+                margin-bottom: calc(80px*var(--scale));
+            }
+        }
+    }
+
+    &.typ-clovia {
+        background-color: #EF5786;
+
+        .inner-content {
+            text-align: center;
+            padding-top: calc(120px*var(--scale));
+            padding-bottom: calc(120px*var(--scale));
+
+            .logo {
+                width: 300px;
+                margin-bottom: calc(80px*var(--scale));
+            }
+        }
+    }
+
+    &.typ-default {
+        padding-top: calc(120px*var(--scale));
+        padding-bottom: calc(120px*var(--scale));
+
+        .form-bg {
+            background-color: $clr-white;
+            padding: 40px;
+        }
+    }
+
+    &.typ-about {
+        background-color: $clr-black;
+
+        .inner-content-about {
+            padding-top: calc(200px*var(--scale));
+            padding-bottom: calc(200px*var(--scale));
+            max-width: 1060px;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .bs-banner {
+        &.banner-section {
+            height: calc(700px*var(--scale));
+        }
+
+        &.typ-about {
+            background-color: $clr-black;
+
+            .inner-content-about {
+                text-align: left;
+            }
+        }
+
+        &.typ-default {
+            .form-bg {
+                margin-top: 30px;
+            }
+        }
+
+        &.typ-ketto {
+
+            .mobile-screen {
+                margin-bottom: 30px;
+            }
+
+            .inner-content {
+                .logo {
+                    width: 150px;
+                    margin-bottom: calc(40px*var(--scale));
+                }
+            }
+
+        }
+
+        &.typ-clovia {
+            .inner-content {
+
+                .logo {
+                    width: 150px;
+                    margin-bottom: calc(40px*var(--scale));
+                }
+            }
+        }
+
+        &.typ-career {
+            .inner-content {
+                padding-top: calc(220px*var(--scale));
+                padding-bottom: calc(100px*var(--scale));
+
+               
+            }
+            img{
+                margin-bottom: calc(80px*var(--scale));  
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,13 @@
+.bs-swiper{
+    &.typ-clients{
+        .swiper{
+            .swiper-wrapper{
+                .swiper-slide{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

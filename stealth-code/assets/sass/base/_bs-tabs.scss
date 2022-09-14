@@ -1,0 +1,148 @@
+.bs-tabs {
+    color: $clr-theme-black;
+
+    .navs {
+        border-bottom: none;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 80px;
+        padding-left: 0;
+
+        .nav-links {
+            font-size: 30px;
+            color: rgba($color: $clr-theme-black, $alpha: 0.4);
+            padding: 0;
+            margin-right: 35px;
+            border: none;
+            outline: none;
+            line-height: 1;
+
+            &.active {
+                border: none;
+                color: $clr-theme-black;
+            }
+
+            &:focus-visible {
+                outline: none;
+            }
+
+            &:hover {
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    .tab-content {
+        .tab-pane {
+            &.active {}
+
+            .tab-title {
+                font-size: 50px;
+                margin-bottom: 30px;
+                line-height: 1;
+            }
+
+            .quote-box {
+                padding: 150px 0;
+                font-size: 20px;
+                color: $clr-white;
+
+                &.typ-lovender {
+                    background-color: $clr-lovender-dark;
+                }
+
+                .wrap {
+                    max-width: 500px;
+                    margin: 0 auto;
+
+                    .quote {
+                        margin-bottom: 30px;
+                    }
+
+                    .written-by {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &.mt-30 {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: $desktop-breakpoint) {
+    .bs-tabs {
+        .navs {
+            .nav-item {
+                .nav-links {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .tab-content {
+            .tab-pane {
+                &.active {}
+
+                .tab-title {
+                    font-size: 30px;
+                }
+
+                .quote-box {
+                    &.typ-lovender {}
+
+                    .wrap {
+                        .quote {}
+
+                        .written-by {}
+                    }
+                }
+            }
+        }
+
+        &.mt-30 {}
+    }
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+    .bs-tabs {
+        .navs {
+            .nav-item {
+                .nav-links {}
+            }
+        }
+
+        .tab-content {
+            .tab-pane {
+                &.active {}
+
+                .tab-title {}
+
+                .quote-box {
+                    padding: 100px 15px;
+
+                    &.typ-lovender {}
+
+                    .wrap {
+                        .quote {}
+
+                        .written-by {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .bs-tabs {
+        .navs {
+            .nav-links {
+                font-size: 18px;
+            }
+        }
+    }
+}

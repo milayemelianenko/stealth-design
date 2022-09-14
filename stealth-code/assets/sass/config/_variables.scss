@@ -1,0 +1,59 @@
+// colors
+$clr-white:#ffffff;
+$clr-black:#000000;
+$clr-theme-black:#0B0E16;
+$clr-para:rgba(11, 14, 22, 0.6);
+$clr-lovender-dark: #7e7dbf;
+$clr-lovender: #B6B5F9;
+$clr-grey: #A8AFC0;
+$clr-grey2: #B9ADC1;
+$clr-grey3:#faf7f9;
+$clr-yellow: #FFD966;
+
+// fonts
+$fnt1: 'Poppins', sans-serif;
+
+/* font weight */
+$font-light:300;
+$font-regular:400;
+$font-medium:500;
+$font-semibold:600;
+$font-bold:700;
+// $font-extrabold:800;
+// $font-black:900;
+
+
+/* breakpoints */
+$smlmobile-breakpoint: 320px;
+$mobile-breakpoint: 767px;
+$tablet-breakpoint:992px;
+$desktop-breakpoint:1024px;
+$small-desktop:1366px;
+$xxl-desktop:1400px;
+$lgdesktop-breakpoint:1600px;
+
+:root {
+    --scale: 1;
+    --scale-element: 1;
+    --scale-font: 1;
+}
+@media (min-width: 1500px) {
+    :root {
+        --scale: 1.1875;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    :root {
+        --scale: 0.9;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    :root {
+        --scale: 0.75;
+    }
+}
+@media (max-width: 767px) {
+    :root {
+        --scale: 0.65;
+    }
+}

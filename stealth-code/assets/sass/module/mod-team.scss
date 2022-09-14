@@ -1,0 +1,18 @@
+.mod-team{
+    .team-layout{
+        .team-img{
+            .swiper-wrapper{
+                .swiper-slide{
+                    width: auto;
+                    height: 100%;
+                    // &:nth-child(2n) {
+                    //     width: 60%;
+                    //   }
+                    //   &:nth-child(3n) {
+                    //     width: 40%;
+                    //   }
+                }
+            }
+        }
+    }
+}

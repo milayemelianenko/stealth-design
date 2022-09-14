@@ -1,0 +1,121 @@
+.bs-video {
+    position: relative;
+
+    .video-inner {
+        // position: absolute;
+        // top: -300px;
+        // left: 0;
+        // width: 100%;
+        // height: 100%;
+        cursor: pointer;
+        margin-top: calc(-300px*var(--scale));
+
+        .video-screen {
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            // width: 100%;
+            // height: 100%;
+            // -o-object-fit: cover;
+            // object-fit: cover;
+            // -o-object-position: center;
+            // object-position: center;
+        }
+
+        .video-play {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: 120px;
+            // z-index: 1;
+
+            .circle {
+                border-radius: 50%;
+                background: rgba(4, 40, 37, .7);
+                -webkit-backdrop-filter: blur(8px);
+                backdrop-filter: blur(8px);
+                transform-origin: center center;
+                transition: all .5s ease;
+                transition-delay: 0s;
+                height: 100%;
+                width: 100%;
+            }
+
+            svg {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &.mt-0{
+            margin-top: 0;
+        }
+
+    }
+}
+
+@media only screen and (max-width: $xxl-desktop){
+    .bs-video {
+        position: relative;
+    
+        .video-inner {
+    
+            .video-play {
+                width: 100px;
+                height: 100px;
+                // z-index: 1;
+    
+                .circle {
+                }
+    
+                svg {
+                    width: 24px;
+                }
+            }
+    
+        }
+    }    
+}
+
+@media only screen and (max-width: $mobile-breakpoint){
+    .bs-video {
+        position: relative;
+    
+        .video-inner {
+            // position: absolute;
+            // top: -300px;
+            // left: 0;
+            // width: 100%;
+            // height: 100%;
+            cursor: pointer;
+            margin-top: calc(-150px*var(--scale));
+    
+            .video-play {
+                width: 80px;
+                height: 80px;
+                // z-index: 1;
+    
+                .circle {
+                    border-radius: 50%;
+                    background: rgba(4, 40, 37, .7);
+                    -webkit-backdrop-filter: blur(8px);
+                    backdrop-filter: blur(8px);
+                    transform-origin: center center;
+                    transition: all .5s ease;
+                    transition-delay: 0s;
+                    height: 100%;
+                    width: 100%;
+                }
+    
+                svg {
+                  width: 20px;
+                }
+            }
+    
+        }
+    }   
+}
+

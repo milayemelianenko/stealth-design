@@ -1,0 +1,69 @@
+.bs-sticky-notes{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .notes{
+        width: 170px;
+        height: 170px;
+        background-color: $clr-yellow;
+        padding: 15px;
+        color: $clr-theme-black;
+        font-size: 12px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+        .title{
+            font-weight: $font-bold;
+            margin-bottom: 15px;
+        }
+        .desc{
+            margin: 0;
+        }
+        &:nth-last-child(3){
+            margin-bottom: 0;
+        }
+        &:nth-last-child(2){
+            margin-bottom: 0;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: $desktop-breakpoint) {
+    .bs-sticky-notes{
+        justify-content: flex-start;
+        .notes{
+            margin-right: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+    .bs-sticky-notes{
+        .notes{
+            width: 100%;
+            margin-right: 0;
+            height: 130px;
+            .title{
+            }
+            .desc{
+            }
+            &:nth-last-child(3){
+                margin-bottom: 25px;
+            }
+            &:nth-last-child(2){
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .bs-sticky-notes{
+        &.mob-mb{
+            margin-bottom: 50px;
+        }
+    }
+}

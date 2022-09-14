@@ -1,0 +1,238 @@
+.bs-faq {
+    .faq-list {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+
+        li {
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+
+            &:last-child {
+                border-bottom: 0px;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+        }
+
+        .faq-title {
+            display: block;
+            position: relative;
+            padding-right: 26px;
+            cursor: pointer;
+            font-weight: $font-semibold;
+            font-size: 25px;
+            line-height: 135%;
+            display: flex;
+            align-items: center;
+            color: #0B0E16;
+        }
+
+        .icon-minus {
+            &::before {
+                font-size: 4px;
+            }
+        }
+
+        .icon {
+            font-size: 16px;
+            position: absolute;
+            right: 0;
+            top: 10px;
+
+
+        }
+
+        .list-desc {
+            margin-bottom: 0;
+            padding: 20px 0 0 0;
+            padding-right: 25px;
+            font-weight: $font-regular;
+            font-size: 20px;
+            line-height: 160%;
+            color: $clr-theme-black;
+            letter-spacing: -0.02em;
+
+            a {
+                &.bold {
+                    font-weight: $font-bold;
+
+                    &:hover {
+                        color: $clr-theme-black;
+                    }
+                }
+            }
+        }
+
+        .icon-show {
+            display: none;
+        }
+
+        .faq-title.collapsed {
+            color: $clr-black;
+
+            &:hover {
+                // color: #e03a3c;
+            }
+
+            .icon-show {
+                display: inline-block;
+            }
+
+            .icon-off {
+                display: none;
+            }
+        }
+    }
+
+    &.career-faq {
+        .faq-list {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+
+            li {
+                border-bottom: 1px solid rgb(217, 217, 217, 0.5);
+                margin-bottom: calc(40px*var(--scale));
+                padding-bottom: calc(50px*var(--scale));
+
+                &:last-child {
+                    border-bottom: 0px;
+                    margin-bottom: 0px;
+                    padding-bottom: 0px;
+                }
+            }
+
+            .faq-title {
+                display: block;
+                position: relative;
+                padding-right: 26px;
+                cursor: pointer;
+                font-weight: $font-bold;
+                font-size: 42px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+
+            .icon-minus {
+                &::before {
+                    font-size: 4px;
+                    color: #FFFFFF;
+                    border-radius: 1.5px;
+                }
+            }
+
+            .icon {
+                font-size: 16px;
+                position: absolute;
+                right: 0;
+                top: 10px;
+
+                &::before {
+                    color: #FFFFFF;
+                    border-radius: 1.5px;
+                }
+
+
+            }
+
+            .list-desc {
+                margin-bottom: 0;
+                padding: 20px 0 0 0;
+                padding-right: 25px;
+                font-weight: 300;
+                line-height: 160%;
+                color: $clr-theme-black;
+                // letter-spacing: -0.02em;
+                font-size: 28px;
+                color: #FFFFFF;
+                max-width: 1105px;
+
+
+                a {
+                    &.bold {
+                        font-weight: $font-bold;
+
+                        &:hover {
+                            color: $clr-theme-black;
+                        }
+                    }
+                }
+            }
+
+            .icon-show {
+                display: none;
+            }
+
+            .faq-title.collapsed {
+                color: #fff;
+
+                &:hover {
+                    // color: #e03a3c;
+                }
+
+                .icon-show {
+                    display: inline-block;
+                }
+
+                .icon-off {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $xxl-desktop) {
+    .bs-faq {
+        .faq-list {
+
+            .faq-title {}
+
+            .list-desc {
+                font-size: 18px;
+            }
+        }
+        &.career-faq {
+            .faq-list {    
+                .faq-title {
+                    font-size: 30px;
+                }
+    
+                .list-desc {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .bs-faq {
+        .faq-list {
+            padding: 0;
+            list-style: none;
+
+
+            .faq-title {
+                font-size: 20px;
+            }
+
+            .list-desc {
+                font-size: 18px;
+            }
+        }
+        &.career-faq {
+            .faq-list {    
+                .faq-title {
+                    font-size: 20px;
+                }
+    
+                .list-desc {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

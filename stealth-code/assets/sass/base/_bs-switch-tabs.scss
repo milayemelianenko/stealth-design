@@ -1,0 +1,136 @@
+.bs-switch-tabs {
+    .tab-nav {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 60px;
+        margin-bottom: 30px;
+
+        .nav-name {
+            font-size: 24px;
+            font-weight: $font-medium;
+            color: $clr-theme-black;
+        }
+
+        .switch {
+            margin: 0 30px;
+        }
+    }
+
+    .tab-data {
+        .tab-id {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .bs-card {
+                width: 30%;
+
+            }
+        }
+    }
+}
+
+.centering {
+    width: 1300px;
+    height: auto;
+    margin: 200px auto;
+    text-align: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0px;
+    bottom: 0px;
+    background: #dedede;
+    border-radius: 40px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    background: #fff;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background: $clr-theme-black;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(30px);
+    -moz-transform: translateX(30px);
+    transform: translateX(30px);
+}
+
+@media only screen and (max-width: $desktop-breakpoint){
+    .bs-switch-tabs {
+        .tab-nav {
+    
+            .nav-name {
+            }
+    
+            .switch {
+            }
+        }
+    
+        .tab-data {
+            .tab-id {
+                justify-content: space-around;
+                .bs-card {
+                    width: 435px;
+                    margin-bottom: 25px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet-breakpoint){
+    .bs-switch-tabs {
+        .tab-nav {
+    
+            .nav-name {
+                font-size: 18px;
+            }
+    
+            .switch {
+                margin: 0 15px;
+            }
+        }
+    
+        .tab-data {
+            .tab-id {
+                .bs-card {
+                    width: 100%;
+                    &:last-child{
+                    }
+                }
+            }
+        }
+    }
+}

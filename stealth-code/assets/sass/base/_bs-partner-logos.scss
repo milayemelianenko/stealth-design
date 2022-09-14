@@ -1,0 +1,36 @@
+.bs-partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px 0px;
+
+    img {
+        width: 12%;
+    }
+
+    &.typ-mb-0 {
+        margin-bottom: 0;
+    }
+
+    &.typ-align-right {
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+    .bs-partner-logos {
+        margin: 0 25px 0px;
+
+        img {
+            width: 25%;
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+    .bs-partner-logos {
+
+        img {
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.bs-icn-txt{
+    display: flex;
+    align-items: flex-start;
+    .icon{
+        font-size: 100px;
+        margin-right: 15px;
+        color: $clr-theme-black;
+        line-height: 1;
+    }
+    .icn-txt-box{
+        .title{
+            font-size: 24px;
+            font-weight: $font-semibold;
+            color: $clr-theme-black;
+        }
+        .desc{
+            font-size: 16px;
+            color: $clr-theme-black;
+            max-width: 450px;
+            margin-bottom: 0;
+        }
+
+    }
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+    .bs-icn-txt{
+        margin-bottom: 30px;
+        .icon{
+        }
+        .icn-txt-box{
+            .title{
+            }
+            .desc{
+            }
+    
+        }
+        &.typ-mob-last{
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.mod-black-logo{
+    .bs-header{        
+            background-color: $clr-white;
+            .navbar {
+                .container {
+                    .navbar-brand {
+                        .logo-light{
+                            display: block;
+                        }
+                        .logo-dark{
+                            display: none;
+                        }
+                    }
+                    .collapse {
+                        .right-nav {
+                            .menu-btn{
+                                color: $clr-theme-black;
+                            }
+                        }
+                    }
+                }
+            }        
+    }
+    .bs-btn {
+        background-color: $clr-theme-black;
+        border-radius: 100px;
+        // min-width: 198px;
+        padding: 8px 36px;
+        color: $clr-white;
+        transition: all 0.5s;
+        text-align: center;
+        border: 1px solid $clr-theme-black;
+    
+        &:hover {
+            color: $clr-white;
+        }
+    
+        &:focus {
+            color: $clr-white;
+        }
+    
+        &:focus-within {
+            color: $clr-white;
+        }
+    }
+}

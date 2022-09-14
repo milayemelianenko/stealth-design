@@ -1,0 +1,278 @@
+.lyt-section {
+    padding-top: calc(120px*var(--scale));
+    padding-bottom: calc(120px*var(--scale));
+
+    .typ-card-margin {
+        margin-top: 0;
+        margin-bottom: calc(80px*var(--scale));
+
+        &:nth-child(1) {
+            margin-top: calc(100px*var(--scale));
+        }
+
+        &:nth-child(2) {
+            margin-top: calc(200px*var(--scale));
+        }
+           }
+
+    &.typ-no-pb {
+        padding-bottom: 0;
+    }
+
+    &.typ-top {
+        margin-top: 82px;
+    }
+
+    &.typ-no-pt {
+        padding-top: 0;
+    }
+
+    &.typ-overflow-hidden {
+        overflow: hidden;
+
+        
+    }
+
+    .gap-create {
+        --bs-gutter-x: 5rem;
+        --bs-gutter-y: 1rem;
+       
+    }
+    
+    
+   
+   
+
+    &.typ-bg-lovender {
+        background-color: $clr-lovender-dark;
+
+        .menu-marginB {
+            .menu-list {
+                .menu-hd {
+                    font-weight: $font-semibold;
+                    font-size: 26px;
+                    line-height: 100%;
+                    letter-spacing: -0.02em;
+                    color: #FFFFFF;
+                    margin-bottom: 20px;
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding-left: 0;
+
+                    li {
+                        &.menu-name {
+                            font-weight: $font-regular;
+                            font-size: 20px;
+                            line-height: 220%;
+                            letter-spacing: -0.02em;
+                            color: rgba(255, 255, 255, 0.8);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    &.typ-bg-grey {
+        background-color: #A8AFC0;
+
+        .content-pd {
+            margin-top: calc(200px*var(--scale));
+            margin-bottom: calc(100px*var(--scale));
+        }
+
+        &.no-padding {
+            padding: 0;
+        }
+    }
+
+    &.typ-bg-grey2 {
+        background-color: rgba($color: $clr-grey2, $alpha: 0.2);
+    }
+
+    &.typ-black {
+        background-color: $clr-theme-black;
+
+        &.typ-black-img {
+            background: url("../images/smll-cta-bg.jpg") no-repeat center;
+            background-size: cover;
+
+            .career-post {
+                font-weight: $font-bold;
+                font-size: 24px;
+                line-height: 36px;
+                color: #fff;
+
+                .line {
+                    font-weight: 400;
+                    font-size: 17px;
+                    margin-left: calc(30px*var(--scale));
+                    margin-right:calc(30px*var(--scale));
+                }
+
+                &.marB30 {
+                    margin-bottom: calc(30px*var(--scale));
+                }
+            }
+        }
+    }
+
+    &.typ-footer {
+        padding-top: calc(80px*var(--scale));
+        padding-bottom: calc(80px*var(--scale));
+    }
+
+    &.typ-padding-small {
+        padding-top: calc(50px*var(--scale));
+        padding-bottom: calc(50px*var(--scale));
+    }
+
+    &.typ-career-faq{
+        background-color: $clr-black;
+    }
+
+    .new-team{
+        --bs-gutter-x: 1rem;
+        --bs-gutter-y: 1rem; 
+
+        .img-card-team{
+            margin-top: 0;
+        margin-bottom: 15px;
+
+        &:nth-child(1) {
+            margin-top: calc(100px*var(--scale));
+        }
+
+        &:nth-child(3) {
+            margin-top: calc(100px*var(--scale));
+        }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $xxl-desktop) {
+    .lyt-section {
+        &.typ-bg-lovender {
+            .menu-marginB {
+                .menu-list {
+                    .menu-hd {}
+
+                    ul {
+
+                        li {
+                            &.menu-name {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet-breakpoint){
+.lyt-section{
+    &.typ-black {
+        background-color: $clr-theme-black;
+
+        &.typ-black-img {
+           .tab-marB50{
+               margin-bottom: calc(80px*var(--scale));
+           }
+        }
+    }
+}
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .lyt-section {
+        padding-top: calc(120px*var(--scale));
+        padding-bottom: calc(120px*var(--scale));
+
+        &.typ-overflow-hidden {
+            padding-top: calc(120px*var(--scale));
+
+            &.pd-top-mng {
+                padding-top: calc(200px*var(--scale));
+            }
+        }
+
+        .typ-card-margin {
+
+            &:nth-child(1) {
+                margin-top: calc(100px*var(--scale));
+            }
+
+            &:nth-child(2) {
+                margin-top: calc(0px*var(--scale));
+            }
+        }
+
+        &.typ-bg-lovender {
+            .menu-marginB {
+                margin-bottom: calc(50px*var(--scale));
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                .menu-list {
+                    .menu-hd {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+
+                    ul {
+                        list-style-type: none;
+                        padding-left: 0;
+
+                        li {
+                            &.menu-name {
+                                line-height: 160%;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        &.typ-black {
+    
+            &.typ-black-img {
+    
+                .career-post {
+                    font-size: 16px;
+                    line-height: 150%;
+                }
+            }
+        }
+
+        .new-team{
+            --bs-gutter-x: 1rem;
+            --bs-gutter-y: 1rem; 
+    
+            .img-card-team{
+                margin-top: 0;
+            margin-bottom: 15px;
+    
+            &:nth-child(3) {
+                margin-top: calc(0px*var(--scale));
+            }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+
+}

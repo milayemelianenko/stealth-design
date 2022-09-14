@@ -1,0 +1,187 @@
+.mod-csdp {
+    text-align: center;
+    margin: 0 auto;
+
+    &.pdB80 {
+        padding-bottom: calc(80px*var(--scale)) !important;
+    }
+
+    .first-img,
+    .max-container {
+        max-width: 1000px;
+    }
+
+    .paddTB {
+        padding-top: calc(120px*var(--scale));
+        padding-bottom: calc(120px*var(--scale));
+
+
+    }
+
+    .group-img-sec {
+        margin-top: calc(120px*var(--scale));
+        background: linear-gradient(142.01deg, #F0F0F0 5.31%, #D1D1D1 97.38%, #DADADA 97.38%);
+
+        .padding-manage {
+            padding: calc(100px*var(--scale));
+        }
+
+    }
+
+    .img-left-align {
+        width: 100%;
+        display: flex;
+
+        .right-img {
+            margin-left: auto;
+            border: 1px solid #000;
+            padding: calc(100px*var(--scale));
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+            border-right: 0px;
+        }
+    }
+
+    &.bg-darkred {
+        background-color: rgba(120, 50, 51, 1);
+        padding-top: calc(120px*var(--scale));
+        padding-bottom: calc(120px*var(--scale));
+    }
+
+    &.black-img-section {
+        img {
+            width: 100%;
+        }
+    }
+
+    .marT30{
+        margin-top: 30px;
+    }
+
+    .marB50{
+        margin-bottom: 50px;
+    }
+    &.typ-haptik{
+        .img-left-align{
+            .right-img{
+                padding: 0;
+                border: none;
+            }
+        }
+    }
+
+    .bg-pink{
+        background-color: #F59AB6;
+        border-radius: 50px;
+        padding: calc(80px*var(--scale));
+    }
+    &.typ-pharma{
+        background-color: #2E6ACF;
+        padding-top: 100px;
+    }
+
+    .margTop-mang{
+        &:nth-child(2), &:nth-child(4){
+            margin-top:calc(80px*var(--scale));
+        }
+    }
+  
+
+}
+
+@media only screen and (max-width: $xxl-desktop) {
+    .mod-csdp {
+        // text-align: center;
+        // margin: 0 auto;
+
+        .first-img,
+        .max-container {
+            max-width: 100%;
+        }
+
+        .paddTB {
+            padding-top: calc(120px*var(--scale));
+            padding-bottom: calc(120px*var(--scale));
+
+            // .marB50-mob{
+            //     margin-bottom:  calc(60px*var(--scale)); 
+            // }
+
+        }
+
+        //     .group-img-sec{
+        //             // margin-top: calc(120px*var(--scale));
+        //             // background: linear-gradient(142.01deg, #F0F0F0 5.31%, #D1D1D1 97.38%, #DADADA 97.38%);
+        //             .padding-manage{
+        //                 padding: calc(100px*var(--scale));
+        //                 padding-left: 0;
+        // padding-right: 0;
+        //             }
+
+        //         }
+
+    }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .mod-csdp {
+        // text-align: center;
+        // margin: 0 auto;
+
+        .first-img {
+            // max-width: 100%;
+        }
+
+        .paddTB {
+            padding-top: calc(120px*var(--scale));
+            padding-bottom: calc(120px*var(--scale));
+
+            .marB50-mob {
+                margin-bottom: calc(60px*var(--scale));
+            }
+
+        }
+
+        .group-img-sec {
+
+            // margin-top: calc(120px*var(--scale));
+            // background: linear-gradient(142.01deg, #F0F0F0 5.31%, #D1D1D1 97.38%, #DADADA 97.38%);
+            .padding-manage {
+                padding: calc(100px*var(--scale));
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+        }
+        .marB30-mob{
+            margin-bottom: 30px;
+        }
+
+        .logo-size-150{
+            width: 150px;
+        }
+
+        .mob-reverse{
+            flex-direction: column-reverse;
+        }
+
+        .bg-pink{
+            border-radius: 0px;
+        }
+
+        .margTop-mang{
+          &:nth-child(3){
+                margin-top:calc(80px*var(--scale));
+            }
+        }
+
+        &.typ-pharma{
+            background-color: #2E6ACF;
+            .logo-img{
+                width: 150px;
+                margin-bottom: 50px;
+            }
+        }
+
+    }
+}
